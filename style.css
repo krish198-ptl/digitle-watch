@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #1d1f27;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.clock-container {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 3px solid #61dafb;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(97, 218, 251, 0.8);
+    background: #282c34;
+    animation: boxGlow 1.5s infinite alternate;
+}
+
+@keyframes boxGlow {
+    from {
+        box-shadow: 0 0 20px rgba(97, 218, 251, 0.8);
+    }
+    to {
+        box-shadow: 0 0 40px rgba(97, 218, 251, 1);
+    }
+}
+
+#date, #time {
+    font-size: 2rem;
+    margin: 10px 0;
+    animation: textGlow 1.5s infinite alternate;
+}
+
+@keyframes textGlow {
+    from {
+        color: #ffffff;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+    }
+    to {
+        color: #61dafb;
+        text-shadow: 0 0 20px rgba(97, 218, 251, 1);
+    }
+}
+
+#wallClock {
+    border: 5px solid #61dafb;
+    border-radius: 50%;
+    background: #282c34;
+    box-shadow: 0 0 20px rgba(97, 218, 251, 0.8);
+}
